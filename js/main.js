@@ -108,15 +108,27 @@
 // console.log("Второе число:", second);
 // console.log("Остальные числа:", rest);
 
-const nums1 = [10, 20, 30];
-const nums2 = [40, 50, 60];
-const allNums = [...nums1, ...nums2];
-console.log("Объединённые массивы:", allNums);
-function findMax(...numbers) {
-    return Math.max(...numbers);
-}
-console.log("Максимум из 5, 12, 8, 20, 3:", findMax(5, 12, 8, 20, 3));
-const obj1 = { a: 1, b: 2 };
-const obj2 = { c: 3, d: 4 };
-const mergedObj = { ...obj1, ...obj2 };
-console.log("Объединённые объекты:", mergedObj);
+// const nums1 = [10, 20, 30];
+// const nums2 = [40, 50, 60];
+// const allNums = [...nums1, ...nums2];
+// console.log("Объединённые массивы:", allNums);
+// function findMax(...numbers) {
+//     return Math.max(...numbers);
+// }
+// console.log("Максимум из 5, 12, 8, 20, 3:", findMax(5, 12, 8, 20, 3));
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
+// const mergedObj = { ...obj1, ...obj2 };
+// console.log("Объединённые объекты:", mergedObj);
+
+import { greet, add, PI} from "./utils.js";
+import {multiply as умножить} from "./utils.js";
+import * as Utils from "./utils.js";
+console.log(Utils.greet("Мария"));
+console.log("Умножение:", Utils.multiply(3,9));
+console.log("4 * 7 =", умножить(4,7));
+console.log("Модули");
+console.log(greet ("Алексей"));
+console.log("5+3=", add(5,3));
+console.log(" Значение PI:", PI );
+
