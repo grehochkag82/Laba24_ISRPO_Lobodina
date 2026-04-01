@@ -273,29 +273,49 @@
 
 //  cookDinerFast().then((result)=> console.log(result));
 
-async function processOrder() {
-    try {
-        console.log("\nОбработка заказа");
-        console.log("Проверяем наличие товара...");
-        await delay(1000);
-        const hasStock = true; 
-        if (!hasStock) {
-            throw new Error("Товар отсутствует на складе");
-        }
-        console.log("Товар в наличии");
-        console.log("Рассчитываем стоимость...");
-        await delay(800);
-        const price = 1500;
-        const quantity = 2;
-        const total = price * quantity;
-        console.log(`Стоимость: ${price}₽ × ${quantity} = ${total}₽`);
+// async function processOrder() {
+//     try {
+//         console.log("\nОбработка заказа");
+//         console.log("Проверяем наличие товара...");
+//         await delay(1000);
+//         const hasStock = true; 
+//         if (!hasStock) {
+//             throw new Error("Товар отсутствует на складе");
+//         }
+//         console.log("Товар в наличии");
+//         console.log("Рассчитываем стоимость...");
+//         await delay(800);
+//         const price = 1500;
+//         const quantity = 2;
+//         const total = price * quantity;
+//         console.log(`Стоимость: ${price}₽ × ${quantity} = ${total}₽`);
     
-        console.log("Подтверждаем заказ...");
-        await delay(500);
-        console.log("Заказ подтверждён");
-        return `Заказ успешно оформлен на сумму ${total}₽`;
-    } catch (error) {
-        console.log("Ошибка при обработке заказа:", error);
-        return "Ошибка оформления заказа";
-    }
-}
+//         console.log("Подтверждаем заказ...");
+//         await delay(500);
+//         console.log("Заказ подтверждён");
+//         return `Заказ успешно оформлен на сумму ${total}₽`;
+//     } catch (error) {
+//         console.log("Ошибка при обработке заказа:", error);
+//         return "Ошибка оформления заказа";
+//     }
+// }
+
+// console.log("Fetch API");
+// async function getUsers() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//         if (!response.ok) {
+//             throw new Error(`HTTP ошибка! Статус: ${response.status}`);
+//         }
+//         const users = await response.json();
+//         console.log("Первые 3 пользователя:");
+//         users.slice(0, 3).forEach((user) => {
+//             console.log(`- ${user.name} (${user.email})`);
+//         });
+//         return users.slice(0, 3);
+//     } catch (error) {
+//         console.log("Ошибка при загрузке пользователей:", error.message);
+//     }
+// }
+// getUsers();
+
